@@ -104,7 +104,7 @@ const ResumeUpload = () => {
           loading ? "bg-gray-400 cursor-not-allowed" : "bg-blue-600 hover:bg-blue-700"
         }`}
       >
-        {loading ? "⏳ Uploading..." : "🚀 Upload & Analyze"}
+        {loading ? "⏳ Uploading..." : " Upload & Analyze"}
       </button>
 
       {/* 📌 Display Feedback */}
