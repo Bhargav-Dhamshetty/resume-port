@@ -12,7 +12,7 @@ const resumeApp = express.Router();
 
 // ✅ CORS Configuration (Allow multiple origins)
 const corsOptions = {
-  origin: ["http://localhost:5173", "http://localhost:3000", "https://yourdomain.com"],
+  origin: ["https://resume-port-kappa.vercel.app"],
   credentials: true,
 };
 resumeApp.use(cors(corsOptions));
