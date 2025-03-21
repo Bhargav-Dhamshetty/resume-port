@@ -31,7 +31,7 @@ const ResumeUpload = () => {
 
       // 📌 Send File to Backend for AI Processing
       const response = await axios.post(
-        "http://localhost:9000/resume-api/analyze",
+        `${import.meta.env.VITE_BACKEND_URL}/resume-api/analyze`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },

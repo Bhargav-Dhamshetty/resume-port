@@ -36,7 +36,7 @@ const ResumeView = () => {
   
       // Send file to backend
       const response = await axios.post(
-        "http://localhost:9000/resume-api/ats-score",
+        `${import.meta.env.VITE_BACKEND_URL}/resume-api/ats-score`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
